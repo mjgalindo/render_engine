@@ -6,7 +6,7 @@
  **         Santiago Gil Begué, NIA: 683482
  ** -------------------------------------------------------------------------*/
 
-#include <participatingMedia.hpp>
+#include "participatingMedia.hpp"
 
 ParticipatingMedia::ParticipatingMedia(const shared_ptr<Shape> &shape,
                                        const float scattering, const float absorption)

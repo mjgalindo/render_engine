@@ -7,7 +7,7 @@
  ** -------------------------------------------------------------------------*/
 
 #include <fstream>
-#include <image.hpp>
+#include "image.hpp"
 #include <iostream>
 
 Image::Image(const unsigned int width, const unsigned int height)

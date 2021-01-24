@@ -6,7 +6,7 @@
  **         Santiago Gil Begué, NIA: 683482
  ** -------------------------------------------------------------------------*/
 
-#include <kdtree.hpp>
+#include "kdtree.hpp"
 #include <fstream>
 
 void KDTree::Clear() {

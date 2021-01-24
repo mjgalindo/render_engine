@@ -6,8 +6,10 @@
  **         Santiago Gil Begué, NIA: 683482
  ** -------------------------------------------------------------------------*/
 
-#include <lightRay.hpp>
+#include "lightRay.hpp"
 #include <plane.hpp>
+#include <tuple>
+
 
 LightRay::LightRay() {}
 
@@ -19,12 +21,12 @@ LightRay::LightRay(const Point &source, const Vect &direction)
 : mSource(source), mDirection(direction.Normalise())
 {}
 
-tuple<float, float> LightRay::Distance(const Point &to) const
+std::tuple<float, float> LightRay::Distance(const Point &to) const
 {
     Plane plane(to, mDirection);
     float tProjection = plane.Intersect(*this);
     Point intersection = GetPoint(tProjection);
-    return make_tuple(intersection.Distance(to), tProjection);
+    return std::make_tuple(intersection.Distance(to), tProjection);
 }
 
 Point LightRay::GetPoint(const float t) const

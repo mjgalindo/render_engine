@@ -6,7 +6,7 @@
 **         Santiago Gil Begué, NIA: 683482
 ** -------------------------------------------------------------------------*/
 
-#include <coloredLightRay.hpp>
+#include "coloredLightRay.hpp"
 
 ColoredLightRay::ColoredLightRay() {}
 

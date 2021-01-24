@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cfloat": "cpp",
+        "tuple": "cpp"
+    }
+}

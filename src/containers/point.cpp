@@ -7,8 +7,7 @@
  ** -------------------------------------------------------------------------*/
 
 #include <cmath>
-#include <plane.hpp>
-#include <point.hpp>
+#include "point.hpp"
 
 Point::Point()
 {}

@@ -7,7 +7,7 @@
 ** -------------------------------------------------------------------------*/
 
 #include <math.h>
-#include <vect.hpp>
+#include "vect.hpp"
 
 Vect::Vect()
 {}

@@ -10,8 +10,8 @@
 #include <image.hpp>
 #include <iostream>
 #include <poseTransformationMatrix.hpp>
-#include <scene.hpp>
-#include <sphere.hpp>
+#include "scene.hpp"
+#include "geometry/sphere.hpp"
 #include <thread>
 
 void printProgressBar(unsigned int pixel, unsigned int total)

@@ -6,7 +6,7 @@
  **         Santiago Gil Begué, NIA: 683482
  ** -------------------------------------------------------------------------*/
 
-#include <photon.hpp>
+#include "photon.hpp"
 
 Photon::Photon() {}
 

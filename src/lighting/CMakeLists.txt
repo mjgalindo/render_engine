@@ -1,1 +1,0 @@
-add_library(lighting STATIC pointLight.cpp simpleAreaLight.cpp)

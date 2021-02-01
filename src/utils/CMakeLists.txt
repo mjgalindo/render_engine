@@ -1,1 +1,0 @@
-add_library(utils STATIC  intersections.cpp poseTransformationMatrix.cpp transformationMatrix.cpp visibleNormal.cpp)

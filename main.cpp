@@ -9,9 +9,9 @@
 
 #include <functional>
 #include <iostream>
-#include <pinhole.hpp>
-#include <scene.hpp>
-#include <sceneSamples.hpp>
+#include "pinhole.hpp"
+#include "scene.hpp"
+#include "sceneSamples.hpp"
 #include <thread>
 #include <sstream>
 #include <map>
@@ -152,7 +152,10 @@ int main(int argc, char * argv[])
                     threadCount = (unsigned int) tmp;
                     i++;
                 }
-            }catch(invalid_argument){/*Do nothing*/}
+            }catch(const invalid_argument& )
+            { 
+                std::cerr << "Invalid number of threads \"" << arguments[i+1] << "\"\n";
+            }
         }
 
         else if (arguments[i] == "--gamma")
@@ -180,7 +183,7 @@ int main(int argc, char * argv[])
                     photonCount = (unsigned int) tmp;
                     i++;
                 }
-            }catch(invalid_argument){cerr << "Not a valid integer: " << arguments[i+1] << '\n'; return 1;}
+            }catch(const invalid_argument& ){cerr << "Not a valid integer: " << arguments[i+1] << '\n'; return 1;}
         }
         else if (arguments[i] == "-k")
         {
@@ -192,7 +195,7 @@ int main(int argc, char * argv[])
                     k_nearest = (unsigned int) tmp;
                     i++;
                 }
-            }catch(invalid_argument){cerr << "Not a valid integer: " << arguments[i+1] << '\n'; return 1;}
+            }catch(const invalid_argument&){cerr << "Not a valid integer: " << arguments[i+1] << '\n'; return 1;}
         }
         else if (arguments[i] == "-s")
         {

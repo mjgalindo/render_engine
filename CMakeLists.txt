@@ -12,8 +12,8 @@ add_subdirectory(src)
 target_link_libraries(render
                       container
                       geometry
-		      lighting
-		      scene
-		      sensors
-		      utils
-		      pthread)
+                      lighting
+                      scene
+                      sensors
+                      utils
+                      pthread)

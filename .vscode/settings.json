@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "cfloat": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "iostream": "cpp",
+        "stdexcept": "cpp"
     }
 }
